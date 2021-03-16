@@ -4,3 +4,14 @@ edu ~ $ minikube dashboard
 then you will be prompt to:
 
 http://127.0.0.1:38415/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/overview?namespace=default
+
+Kubernetes Dashboard with 'kubectl proxy'
+
+First, we issue the kubectl proxy command:
+
+edu ~ $ kubectl proxy
+Starting to serve on 127.0.0.1:8001
+
+Open the following:
+
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/overview?namespace=default
