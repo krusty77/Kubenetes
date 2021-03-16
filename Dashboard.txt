@@ -1,0 +1,6 @@
+Run this:
+edu ~ $ minikube dashboard
+
+then you will be prompt to:
+
+http://127.0.0.1:38415/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/overview?namespace=default
