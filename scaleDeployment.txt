@@ -1,0 +1,8 @@
+--first create a simple deployment
+kubectl create deployment mynginx --image=nginx:1.15-alpine
+
+--Then see the status grouping by the label mynginx
+kubectl get deploy,rs,po -l app=mynginx
+
+--now add the 3 replicas
+kubectl scale deploy mynginx --replicas=3
