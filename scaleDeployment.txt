@@ -6,3 +6,21 @@ kubectl get deploy,rs,po -l app=mynginx
 
 --now add the 3 replicas
 kubectl scale deploy mynginx --replicas=3
+
+
+--Remember the name replicaset.apps/mynginx-847485c545
+
+--to see what's happening use the describe command
+kubectl describe deployment mynginx
+
+Containers:
+   nginx:
+    Image:        nginx:1.15-alpine
+    Port:         <none>
+    Host Port:    <none>
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+
+
+--UPDATES AND ROLLBACKS
