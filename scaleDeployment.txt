@@ -29,3 +29,4 @@ kubectl rollout history deployments
 
 --to check specifically the deployment use the name
 kubectl rollout history deploy mynginx
+
