@@ -24,3 +24,8 @@ Containers:
 
 
 --UPDATES AND ROLLBACKS
+--lets see what the deployment history is
+kubectl rollout history deployments
+
+--to check specifically the deployment use the name
+kubectl rollout history deploy mynginx
